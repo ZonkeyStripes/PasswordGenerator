@@ -1,1 +1,6 @@
 # PasswordGenerator
+
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0123456789
+!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~

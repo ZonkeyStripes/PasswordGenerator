@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src ="main.js"> </script>
-    <title>Password Generator</title>
-  </head>
-  <body>
-    <header>
-      <h1>Password Generator</h1>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+
+  <div>
+    Lowercase letters: <input type="checkbox" id="lowercase">
+    <br>
+    Uppercase Letters: <input type="checkbox" id="uppercase">
+    <br>
+    Numbers: <input type="checkbox" id="numbers">
+    <br>
+    Symbols: <input type="checkbox" id="symbols">
+    <br>
+  </div>
+  <form name="pgenerate">
+    How many characters? <input type="number" id="generate" value="" min="8" max="100" /><br />
+
     <h2>Generate a Password</h2>
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
+
+    <textarea id="password" placeholder="Your Secure Password"></textarea>
+    <br>
+    <button type="button" id="result" onclick="generatePassword();">Generate Password</button>
+    <button type="button" onclick="copyFunc();">
       Copy to Clipboard
     </button>
-  </body>
+  </form>
+  <script src="main.js"> </script>
+</body>
+
 </html>

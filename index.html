@@ -16,7 +16,8 @@
     <h1>Password Generator</h1>
   </header>
 
-  <div>
+  <main class="container">
+  <div id="boxes">
     Lowercase letters: <input type="checkbox" id="lowercase">
     <br>
     Uppercase Letters: <input type="checkbox" id="uppercase">
@@ -25,7 +26,7 @@
     <br>
     Symbols: <input type="checkbox" id="symbols">
     <br>
-  </div>
+  
   <form s>
     How many characters? 
     <br>
@@ -34,7 +35,7 @@
     Length must be (8-128)
 
     <h2>Generate a Password</h2>
-
+  </div>
     <textarea id="password" placeholder="Your Secure Password" class="form-control"></textarea>
     <br>
     <button type="button" id="result" onclick="generatePassword();">Generate Password</button>
@@ -42,6 +43,7 @@
       Copy to Clipboard
     </button>
   </form>
+</main>
   <script src="main.js"> </script>
 </body>
 

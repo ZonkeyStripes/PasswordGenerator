@@ -13,11 +13,18 @@
     if (numbers) { putinPassword.push(c); }
     if (symbols) { putinPassword.push(d); }
 
-    for (let i = 0; i<generate ; i++){
+    if (!lowercase && !uppercase && !numbers && !symbols) {
+        alert("Please ensure atleast one box is checked");
+    }
+
+    for (let i = 0; i < generate ; i++){
         password += randomArr(putinPassword);
         }
         return document.getElementById("password").innerText = password;
     }
+
+
+
     function copyFunc() {
         var copyText = document.getElementById("password");
         copyText.select();

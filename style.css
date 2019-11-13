@@ -1,9 +1,19 @@
 h1 {
-
+    font-family: 'IBM Plex Mono', monospace;
+    color: cornflowerblue;
+    margin-bottom: 3%;
+    text-emphasis: bold;
 }
-
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+main {
+    width: 960px;
+    
+}
 body {
-
+    font-family: 'IBM Plex Mono', monospace;
+    color: cornflowerblue;
 }
 #boxes {
     text-align: center;
@@ -11,9 +21,32 @@ body {
 textarea{
     text-align:center;
  }
+#password {
+    margin-top: 2%;
+}
 
-main {
-    width: 960px;
-    border: dotted red;
-    
+/* Buttons */
+#result{
+    margin-top: 1%;
+    font-family: 'Wallpoet', cursive;
+    color: #00FF00;
+    background-color: black;
+    border: solid red;
+}
+.button {
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: 'Wallpoet', cursive;
+    color: #00FF00;
+    border: solid red;
+    background-color: black;
+}
+.button:hover {
+    color: cornflowerblue
+}
+#result:hover {
+    color: cornflowerblue;
+}
+.cpybtn {
+    text-align: center;
 }

@@ -3,47 +3,52 @@
 
 <head>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Wallpoet&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
 </head>
 
-<body>
+<body background="http://getwallpapers.com/wallpaper/full/e/5/0/198873.jpg">
   <header>
-    <h1>Password Generator</h1>
+    <h1>Password Generator:</h1>
   </header>
 
   <main class="container">
-  <div id="boxes">
-    Lowercase letters: <input type="checkbox" id="lowercase">
-    <br>
-    Uppercase Letters: <input type="checkbox" id="uppercase">
-    <br>
-    Numbers: <input type="checkbox" id="numbers">
-    <br>
-    Symbols: <input type="checkbox" id="symbols">
-    <br>
-  
-  <form s>
-    How many characters? 
-    <br>
-    <input type="number" id="generate" value="" min="8" max="128" />
-    <br />
-    Length must be (8-128)
+    <div id="boxes">
+      Lowercase letters: <input type="checkbox" id="lowercase">
+      <br>
+      Uppercase Letters: <input type="checkbox" id="uppercase">
+      <br>
+      Numbers: <input type="checkbox" id="numbers">
+      <br>
+      Symbols: <input type="checkbox" id="symbols">
+      <br>
 
-    <h2>Generate a Password</h2>
-  </div>
+      <form s>
+        How many characters?
+        <br>
+        <input type="number" id="generate" value="" min="8" max="128" />
+        <br />
+        Length must be (8-128)
+        <br>
+
+        <!-- <h2>Generate a Password</h2> -->
+        <button type="button" id="result" onclick="generatePassword();">Generate Password</button>
+    </div>
     <textarea id="password" placeholder="Your Secure Password" class="form-control"></textarea>
     <br>
-    <button type="button" id="result" onclick="generatePassword();">Generate Password</button>
-    <button type="button" onclick="copyFunc();">
-      Copy to Clipboard
-    </button>
-  </form>
-</main>
+    <div class="cpybtn">
+      <button class="button" type="button" onclick="copyFunc();">
+        Copy to Clipboard
+      </button>
+    </div>
+    </form>
+  </main>
   <script src="main.js"> </script>
 </body>
 

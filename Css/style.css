@@ -50,3 +50,9 @@ textarea{
 .cpybtn {
     text-align: center;
 }
+.UFO {
+    opacity: 0;
+}
+.UFO:hover {
+    opacity: 1;
+}

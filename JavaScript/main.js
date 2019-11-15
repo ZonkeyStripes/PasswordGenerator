@@ -17,9 +17,9 @@
         alert("Please ensure atleast one box is checked");
     }
     if (generate < 8 ) {
-        alert("Numeric value can't be under 8.");
+        alert("Length of password can't be under 8.");
         }else if (generate > 128) {
-            alert("Numeric value cannot be over 128.");
+            alert("Length of password cannot be over 128.");
     }
     for (let i = 0; i < generate ; i++){
         password += randomArr(putinPassword);

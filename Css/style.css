@@ -32,6 +32,7 @@ textarea{
     color: #00FF00;
     background-color: black;
     border: solid red;
+    border-radius: 45%;
 }
 .button {
     text-align: center;
@@ -40,6 +41,7 @@ textarea{
     color: #00FF00;
     border: solid red;
     background-color: black;
+    border-radius: 45%;
 }
 .button:hover {
     color: cornflowerblue
